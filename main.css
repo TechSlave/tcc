@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+min-height:100%;
+height:100%;
+width:100%;
+margin:0; padding:0;	
+}
+
+#game {
+         width: 100%;
+         height: 100%;
+         touch-action: none;
+      }
+	  
+	  .ui{
+	  	display:block;
+	  	position:fixed;
+	  	width: 100%;
+       height: 100%;
+	   pointer-events:none;
+			font-family:"Courier New", Courier, monospace
+	  }
+	  
+.player-stats{
+ display:block;
+ position:fixed;
+ position:10001;
+ pointer-events:none;
+ background-image:url(./assets/ui/tr.png);
+ background-position:center center;
+ background-repeat:no-repeat;
+ width:275px;
+ height:95px;
+ top:-4px;
+ right:-4px;
+ padding-left: 16px;
+	padding-top: 8px;
+  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color:rgba(255,255,255,0.8);
+}
+
+.player-stats > span{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.output-bar{
+	display:block;
+	width:123px;
+	font-size: 12px;
+	margin-bottom: 1px;
+	
+	
+}
+
+.output-bar > span:first-of-type{
+	display: inline-block;
+	width:18px;
+	position: relative;
+	text-align: center;
+	line-height: 10px;
+}
+
+.output-bar > span:last-of-type{
+	width:100px;
+	height:10px;
+	position: relative;
+	display: inline-block;
+	border: 1px solid;
+	vertical-align: bottom;
+}
+
+.output-bar > span:last-of-type > span{
+	width:100%;
+	height: 100%;
+	left:0;
+	background:white;
+	opacity: 0.5;
+	display: block;
+	position: absolute;
+}
+
+#engine-1 > span:last-of-type > span, #engine-2 > span:last-of-type > span{
+	background-color: lightskyblue;
+}
+
+#sheild-hp> span:last-of-type > span{
+	background-color: teal;
+}
+#armor-hp > span:last-of-type > span{
+	background-color: lightseagreen;
+}
+#core-hp > span:last-of-type > span{
+	background-color: lightsalmon;
+}
+
+
